@@ -1,0 +1,9 @@
+[workspace]
+members = [
+  "src-tauri", "crates/wenhu-cli"]
+resolver = "2"
+
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "2.2.4", features = [] }

@@ -1,0 +1,28 @@
+{
+  "name": "wenhu",
+  "author": "suyufox",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "private": true,
+  "description": "wenhu tools",
+  "packageManager": "pnpm@10.5.2",
+  "scripts": {
+    "dev:app": "pnpm run -F @wenhu/app dev",
+    "dev:tauri:app": "cargo tauri dev",
+    "build:app": "pnpm run -F @wenhu/app build",
+    "build:tauri:app": "cargo tauri build",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.4.0",
+    "@tauri-apps/cli": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/suyufox/wenhu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suyufox/wenhu/issues"
+  },
+  "homepage": "https://github.com/suyufox/wenhu#readme"
+}
