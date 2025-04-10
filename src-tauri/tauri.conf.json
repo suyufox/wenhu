@@ -5,9 +5,9 @@
   "version": "../package.json",
   "identifier": "wen.suyufox.wenhu",
   "build": {
-    "devUrl": "http://localhost:47600",
-    "beforeDevCommand": "pnpm dev:app",
-    "beforeBuildCommand": "pnpm build:app",
+    "devUrl": "http://localhost:57350",
+    "beforeDevCommand": "pnpm dev:webui",
+    "beforeBuildCommand": "pnpm build:webui",
     "frontendDist": "../dist"
   },
   "app": {
@@ -158,6 +158,16 @@
         "language": ["en-US", "zh-TW", "zh-CN"],
         "upgradeCode": "2c5eaf72-e0fd-5276-bc32-488a42374a9c",
         "version": "0.1.0"
+      }
+    }
+  },
+  "plugins": {
+    "deep-link": {
+      "mobile": [
+        { "host": "wenhu.yufox.us.kg" }
+      ],
+      "desktop": {
+        "schemes": ["wenhu-links", "wenhu-configs", "wenhu-plugins"]
       }
     }
   }

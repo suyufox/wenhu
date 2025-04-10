@@ -7,15 +7,15 @@
   "description": "wenhu tools",
   "packageManager": "pnpm@10.5.2",
   "scripts": {
-    "dev:app": "pnpm run -F @wenhu/app dev",
-    "dev:tauri:app": "cargo tauri dev",
-    "build:app": "pnpm run -F @wenhu/app build",
-    "build:tauri:app": "cargo tauri build",
+    "dev:webui": "pnpm run -F @wenhu/webui dev",
+    "dev:tauri:webui": "cargo tauri dev",
+    "dev:manager": "pnpm run -F @wenhu/manager dev",
+    "build:webui": "pnpm run -F @wenhu/webui build",
+    "build:tauri:webui": "cargo tauri build",
+    "build:manager": "pnpm run -F @wenhu/manager build",
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.4.0",
-    "@tauri-apps/cli": "^2.4.0"
   },
   "repository": {
     "type": "git",
